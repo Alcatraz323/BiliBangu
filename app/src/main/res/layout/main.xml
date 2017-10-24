@@ -1,11 +1,132 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center">
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+	<FrameLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent">
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="center"
+			android:id="@+id/mainLinearLayout1"
+			android:visibility="visible">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="wrap_content"
+				android:text="Please Type Above..."/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:visibility="gone"
+			android:id="@+id/mainLinearLayout2">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="left|center">
+
+				<ImageView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:src="@drawable/ic_filmstrip"
+					android:layout_margin="16dp"
+					android:scaleX="0.7"
+					android:scaleY="0.7"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:id="@+id/mainTextView1"
+					android:layout_marginRight="16dp"/>
+
+				<ImageView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:src="@drawable/ic_satellite_variant"
+					android:layout_margin="16dp"
+					android:scaleY="0.7"
+					android:scaleX="0.7"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:id="@+id/mainTextView2"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="left|center">
+
+				<ImageView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:src="@drawable/ic_coin"
+					android:scaleY="0.7"
+					android:scaleX="0.7"
+					android:layout_margin="16dp"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:id="@+id/mainTextView3"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="left|center">
+
+				<ImageView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:src="@drawable/ic_comment_outline"
+					android:scaleX="0.7"
+					android:scaleY="0.7"
+					android:layout_margin="16dp"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"
+					android:id="@+id/mainTextView4"/>
+
+			</LinearLayout>
+
+			<ListView
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:id="@+id/mainListView1"/>
+
+		</LinearLayout>
+
+		<ListView
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:id="@+id/mainListView2"
+			android:visibility="gone"/>
+
+	</FrameLayout>
 
 </LinearLayout>
+

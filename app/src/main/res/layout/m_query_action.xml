@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="left|center">
+
+		<EditText
+			android:singleLine="true"
+			android:background="@null"
+			android:imeOptions="actionDone"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:hint="Bangumi Name"
+			android:id="@+id/mqueryactionEditText1"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
